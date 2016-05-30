@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SafeNuGet</id>
+    <version>1.0.10</version>
+    <authors>Erlend Oftedal</authors>
+    <owners>Erlend Oftedal</owners>
+    <projectUrl>https://github.com/OWASP/SafeNuGet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>OWASP SafeNuGet - MsBuild task to warn about insecure NuGet libraries.</summary>
+    <description>
+      OWASP SafeNuGet is an MsBuild task to warn about insecure NuGet libraries. 
+      
+      Please contribute to the list of vulnerable libraries, by issuing a pull request to:
+      https://github.com/OWASP/SafeNuGet/blob/master/feed/unsafepackages.xml
+    </description>
+    <releaseNotes>First version</releaseNotes>
+    <copyright>OWASP 2013</copyright>
+    <tags>Security</tags>
+  </metadata>
+  <files>
+    <file src="..\SafeNuGet\bin\Debug\SafeNuGet.dll" target="build\SafeNuGet.dll" />
+    <file src="build\Net40\SafeNuGet.targets" target="build\SafeNuGet.targets" />
+  </files>
+</package>
